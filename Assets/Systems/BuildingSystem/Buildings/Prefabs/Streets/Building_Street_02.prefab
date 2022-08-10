@@ -1,0 +1,397 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3404684900048460551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8594889020541644131}
+  - component: {fileID: -6541791865560387404}
+  - component: {fileID: -41572880958614223}
+  m_Layer: 0
+  m_Name: Building_Street_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8594889020541644131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3404684900048460551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9488255, y: 1.697632, z: 0.859432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8595287680969725350}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6541791865560387404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3404684900048460551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87f97e5f031916488154d65402cf8b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dir: 0
+  occupiedPositions: []
+  nameBuilding: 
+  width: 0
+  height: 0
+--- !u!114 &-41572880958614223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3404684900048460551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488b95f6070988f45b11ba45372d0c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddToContainer: 1
+  _editor_DrawSetup: 1
+  _editor_DrawOptimizeList: 1
+  _editor_DrawAddFeatures: 0
+  _editor_DrawLODLevelsSetup: 1
+  _editor_DrawExtra: 0
+  _editor_horizontal: 1
+  _editor_category: 0
+  Editor_InIsolatedScene: 0
+  Editor_JustCreated: 0
+  UseDOTS: 0
+  DOTSObstacleType: 2
+  DOTSDetection: 0
+  DOTSMeshData: []
+  DOTSOffset: {x: 0, y: 0, z: 0}
+  DOTSSize: {x: 1, y: 1, z: 1}
+  DOTSRadius: 1
+  UseMultiShape: 0
+  AutoPrecision: 0.25
+  AutoReferenceMesh: {fileID: 0}
+  DrawPositionHandles: 1
+  ScalingHandles: 1
+  Shapes: []
+  ShapePos: []
+  ShapeRadius: []
+  UseObstacleDetection: 0
+  CoveragePrecision: 1
+  CoverageScale: 1
+  CoverageMask:
+    serializedVersion: 2
+    m_Bits: 1
+  CustomCoveragePoints: 0
+  CoverageOffsets: []
+  ignoredObstacleColliders: []
+  OnlyCamCollLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  LODLevels: 3
+  preLODLevels: 3
+  MaxDistance: 379.5
+  OptimizingMethod: 2
+  CullIfNotSee: 1
+  DetectionRadius: 13.0119915
+  DetectionBounds: {x: 9.954866, y: 13.290892, z: 20.037477}
+  Hideable: 0
+  DetectionOffset: {x: 4.999997, y: 6.645422, z: 10}
+  GizmosAlpha: 1
+  DrawGizmos: 1
+  FadeDuration: 0
+  FadeViewVisibility: 0
+  DeactivateObject: 0
+  LODPercent:
+  - 0.23513718
+  - 0.48027572
+  - 1
+  AutoDistance: 0
+  AutoDistanceFactor: 0
+  DrawAutoDistanceToggle: 1
+  HiddenCullAt: -1
+  LimitLODLevels: 0
+  UnlockFirstLOD: 0
+  DrawGeneratedPrefabInfo: 0
+  DrawDeactivateToggle: 1
+  OptimizationTypes: {fileID: 11400000, guid: 7474cbf40a643684db23f91e59f26fdd, type: 2}
+  ToOptimize:
+  - constructed: 1
+    ToOptimizeIndex: 1
+    optimizer: {fileID: -41572880958614223}
+    Component: {fileID: 7411649423448410269, guid: aca2ef3f4c644ad43a07f1a993652c8e, type: 3}
+    Version: 0
+    lockFirstLOD: 1
+    editorHeader: Optim
+    drawProperties: 1
+    LODs_Particle: []
+    LODs_Light: []
+    LODs_Mono: []
+    LODs_Renderer:
+    - SetDisabled: 0
+      _version: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      UseShadows: 1
+      MotionVectors: 1
+      SkinnedQuality: 0
+      shaderParam: _Transparency
+      ColorParameter: 0
+      targetParamValue: 1
+    - SetDisabled: 0
+      _version: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      UseShadows: 1
+      MotionVectors: 0
+      SkinnedQuality: 0
+      shaderParam: _Transparency
+      ColorParameter: 0
+      targetParamValue: 1
+    - SetDisabled: 0
+      _version: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      UseShadows: 0
+      MotionVectors: 2
+      SkinnedQuality: 1
+      shaderParam: _Transparency
+      ColorParameter: 0
+      targetParamValue: 1
+    - SetDisabled: 1
+      _version: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      UseShadows: 0
+      MotionVectors: 2
+      SkinnedQuality: 1
+      shaderParam: _Transparency
+      ColorParameter: 0
+      targetParamValue: 0
+    - SetDisabled: 1
+      _version: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      UseShadows: 0
+      MotionVectors: 2
+      SkinnedQuality: 1
+      shaderParam: _Transparency
+      ColorParameter: 0
+      targetParamValue: 0
+    LODs_NavMesh: []
+    LODs_Audio: []
+    LODs_Rigidbody: []
+    LODs_LODGroup: []
+    Ini_Particle:
+      SetDisabled: 0
+      QLowerer: 1
+      _Locked: 0
+      cmp: {fileID: 0}
+      EmmissionAmount: 1
+      BurstsAmount: 1
+      ParticleSizeMul: 1
+      MaxParticlAmount: 1
+      OverDistanceMul: 1
+      LifetimeAlpha: 1
+      ColorOverLifetime:
+        m_Mode: 0
+        m_GradientMin:
+          serializedVersion: 2
+          key0: {r: 1, g: 1, b: 1, a: 1}
+          key1: {r: 1, g: 1, b: 1, a: 1}
+          key2: {r: 0, g: 0, b: 0, a: 0}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 65535
+          ctime2: 0
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 65535
+          atime2: 0
+          atime3: 0
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 2
+          m_NumAlphaKeys: 2
+        m_GradientMax:
+          serializedVersion: 2
+          key0: {r: 1, g: 1, b: 1, a: 1}
+          key1: {r: 1, g: 1, b: 1, a: 1}
+          key2: {r: 0, g: 0, b: 0, a: 0}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 65535
+          ctime2: 0
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 65535
+          atime2: 0
+          atime3: 0
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 2
+          m_NumAlphaKeys: 2
+        m_ColorMin: {r: 0, g: 0, b: 0, a: 0}
+        m_ColorMax: {r: 0, g: 0, b: 0, a: 0}
+    Ini_Light:
+      SetDisabled: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      IntensityMul: 1
+      RangeMul: 1
+      ShadowsMode: 2
+      ShadowsStrength: 1
+      RenderMode: 0
+      ChangeIntensity: 1
+    Ini_Mono:
+      SetDisabled: 0
+      ver: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      BaseLOD: 0
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      Parameters: []
+      NotSupported: []
+    Ini_Rend:
+      SetDisabled: 0
+      _version: 1
+      _Locked: 0
+      cmp: {fileID: 0}
+      UseShadows: 1
+      MotionVectors: 1
+      SkinnedQuality: 0
+      shaderParam: _Transparency
+      ColorParameter: 0
+      targetParamValue: 1
+    Ini_Nav:
+      SetDisabled: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      Priority: 1
+      Quality: 4
+    Ini_Audio:
+      SetDisabled: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      PriorityFactor: 1
+      Volume: 1
+    Ini_Rigidbody:
+      SetDisabled: 0
+      _Locked: 0
+      cmp: {fileID: 0}
+      DetectCollisions: 0
+      IsKinematic: 0
+      Interpolation: 0
+      CollisionMode: 0
+      TryTriggerSleep: 0
+      TriggerWakeup: 0
+    Ini_LODGroup:
+      SetDisabled: 0
+      _version: 1
+      _Locked: 0
+      cmp: {fileID: 0}
+      UnityLODLevel: 0
+      shaderParam: _Transparency
+      ColorParameter: 0
+      shaderVisibleValue: 1
+      shaderInvisibleValue: 0
+      crossfadeHelper: 0
+    eOptimizer: {fileID: -41572880958614223}
+    ControlerType: 4
+--- !u!1001 &8595287680969603870
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8594889020541644131}
+    m_Modifications:
+    - target: {fileID: 183762, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_Name
+      value: CarRoad_Single_Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+--- !u!4 &8595287680969725350 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 405176, guid: ce06dbbdbfe421e488d68e94fe213d32, type: 3}
+  m_PrefabInstance: {fileID: 8595287680969603870}
+  m_PrefabAsset: {fileID: 0}

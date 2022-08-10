@@ -1,0 +1,194 @@
+﻿#if UNITY_2019_4_OR_NEWER
+
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace FIMSpace.FOptimizing
+{
+    /// <summary>
+    /// FC: This Optimizer is holding optimization data within serialized MonoBehaviour 
+    /// instead of ScriptableObjects giving better flexibility but not allowing for custom
+    /// optimization types implementation
+    /// </summary>
+    [AddComponentMenu("FImpossible Creations/Optimizer 2 (v2019.4+)", 0)]
+    public partial class Optimizer2 : Optimizer_Base, UnityEngine.EventSystems.IDropHandler, IFHierarchyIcon
+    {
+
+#region Hierarchy Icon
+
+        public string EditorIconPath { get { if (PlayerPrefs.GetInt("OptH", 1) == 0) return ""; else return "FIMSpace/Optimizers 2/OptEsIconSmall"; } }
+        public void OnDrop(UnityEngine.EventSystems.PointerEventData data) { }
+
+#endregion
+
+        [HideInInspector] public Optimizer2020Selector OptimizationTypes;
+
+        /// <summary> 
+        /// List of component's to optimize and their LOD Settings inside each instance of LODs Controller 
+        /// </summary>
+        public List<Optimizer2020LODsController> ToOptimize;
+
+
+        protected override LODsControllerBase AddToOptimize(LODsControllerBase lod)
+        {
+#if UNITY_EDITOR
+            ToOptimize.Add(lod as Optimizer2020LODsController);
+            lod.GenerateLODParameters();
+            lod.ToOptimizeIndex = ToOptimize.Count;
+            return lod;
+#else
+            return null;
+#endif
+        }
+
+
+        public override Component GetOptimizedComponent(int i)
+        {
+            if (i >= ToOptimize.Count) return null;
+            return ToOptimize[i].Component;
+        }
+
+
+        internal override ILODInstance GetLODInstance(int i, int targetLODLevel)
+        {
+            if (i >= ToOptimize.Count) return null;
+            if (targetLODLevel >= ToOptimize[i].GetLODSettingsCount()) return null;
+            return ToOptimize[i].GetLODSetting(targetLODLevel);
+        }
+
+
+        internal override void RemoveToOptimize(LODsControllerBase lODsControllerBase)
+        {
+            for (int i = ToOptimize.Count - 1; i >= 0; i--)
+            {
+                LODsControllerBase lod = ToOptimize[i] as LODsControllerBase;
+                if (lod == null)
+                {
+                    ToOptimize.RemoveAt(i);
+                    continue;
+                }
+
+                if (lod == lODsControllerBase)
+                {
+                    ToOptimize.RemoveAt(i);
+                    return;
+                }
+            }
+        }
+
+
+        public override bool OptimizationListExists()
+        {
+            return ToOptimize != null;
+        }
+
+    }
+
+}
+
+#else
+
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+namespace FIMSpace.FOptimizing
+{
+    [UnityEngine.AddComponentMenu("")]
+    public partial class Optimizer2 : Optimizer_Base, UnityEngine.EventSystems.IDropHandler, IFHierarchyIcon
+    {
+        //!!!
+        [HideInInspector] public Optimizer2020Selector OptimizationTypes;
+
+        public string EditorIconPath => "";
+
+        public override bool ContainsComponent(Component component)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override Component GetOptimizedComponent(int i)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnDrop(PointerEventData eventData)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override bool OptimizationListExists()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void RefreshLODSettings()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void RefreshToOptimizeList()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override LODsControllerBase AddToOptimize(LODsControllerBase lod)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void AllLODComponents_ApplyCulledState()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void AllLODComponents_ApplyCurrentState()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void AllLODComponents_ChangeChoosedLODState(int lodLevel)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void AllLODComponents_RefreshChoosedLODState(int lodLevel)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void ResetLODs(bool hard = false)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        internal override ILODInstance GetLODInstance(int i, int targetLODLevel)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        internal override Optimizers_LODTransition GetLodTransitionFor(int optimizedIndex, int targetLOD)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        internal override void RemoveToOptimize(LODsControllerBase lODsControllerBase)
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+
+#if UNITY_EDITOR
+    [UnityEditor.CanEditMultipleObjects]
+    [UnityEditor.CustomEditor(typeof(Optimizer2))]
+    public class Optimizer2Editor : UnityEditor.Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            UnityEditor.EditorGUILayout.HelpBox("This component is available only since unity 2019.4+ !!!", UnityEditor.MessageType.Info);
+        }
+    }
+#endif
+
+}
+#endif

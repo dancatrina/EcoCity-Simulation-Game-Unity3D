@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5340df81b4e5240b11745a867e4a99, type: 3}
+  m_Name: Building_Cinema_01
+  m_EditorClassIdentifier: 
+  nameBuilding: 
+  width: 1
+  height: 1
+  prefab: {fileID: 3002683388930913380, guid: 1c8257105a9431f4a9bc3540829d8ec0, type: 3}
+  visual: {fileID: 3002683388930913380, guid: 1c8257105a9431f4a9bc3540829d8ec0, type: 3}
