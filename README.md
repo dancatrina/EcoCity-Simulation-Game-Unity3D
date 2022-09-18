@@ -154,6 +154,25 @@ Funcționalitățile care stau la baza proiectului sunt:
     <img src = "https://drive.google.com/uc?export=view&id=1PDT1Xdb1UikiVHMCcBlJlLaLOBSGTx0R" height = "300px" ></img>
 </div>
 
+# UML - Particularități
+<details>
+   <summary> 
+        <b> Diagrama detalită a claselor </b> 
+        </summary>
+    <div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1IqJ-y2IFXrjJvOvFiwJ1_k3Q3aEcv7Pp" height = "250px" ></img>
+    </div>
+</details>
+
+<details>
+   <summary> 
+        <b> Diagrama de componente </b> 
+        </summary>
+    <div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1A4z1ajCeBo3ANxBy014gIi20p1BaqAo1" height = "250px" ></img>
+    </div>
+</details>
+
 
 # 🛠️Tehnologii🛠️
 - <b>Unity </b> - motorul de baza in care a avut loc ansamblarea întregului proiect
