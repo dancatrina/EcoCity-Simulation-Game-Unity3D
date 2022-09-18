@@ -28,8 +28,10 @@ Funcționalitățile care stau la baza proiectului sunt:
 
 ## 🏫Sistemul de construcție
 - Prin intermediul acesteui sistem, i se oferă utilizatorului posibilitatea de a dezvolta infrastructura așezării urbane. Aici, jucatorul poate să își imagineze și să proiecteze zona dorită astfel încât valoarea economică a orașului să crească.
-
+- 
 ### Tipuri de clădiri
+- Clădirile sunt unice la nivelul proiectului, fiecare având un rol bine stabilit. Mai jos se poate găsii tabelul
+
 | Tip | Rol|
 | ------------ | ------------ |
 | <b>Rezidențial<b> | Oferă cetățeniilor o locuință
@@ -40,6 +42,62 @@ Funcționalitățile care stau la baza proiectului sunt:
 |  <b>Sanatate</b> | Sporește rata natalității |
 |  <b>Religie</b> | - |
 | <b>Public</b>  |   Produce puncte de cercetare |
+
+#### Particularitați
+- Tipurile de resurse produse/consumate de clădiri în scopul producerii de capital
+
+| Tip| Produce  | Consumă   |
+| ------------ | ------------ | ------------ |
+| **Ferma** | Boabe Cafea / Grau / Tutun  | |
+|  **Industrie** |  Paine / Cafea / Tigări | Grau / Boabe Cafea / Tutun  |
+|  **Comercial** | - | Paine / Tigări / Cafea  |
+
+### UML - Sistem clădiri
+<details>
+<summary> <b> Diagrama de activitate asupra sistemului de construcție </b></summary>
+
+<div align = "center">
+    <img src = "https://drive.google.com/uc?export=view&id=18qH1XtNCMn9KO8rha-A4vs-cIBGPi7tZ" height = "300px" ></img>
+</div>
+</details>
+
+<details>
+   <summary> 
+        <b> Diagrama de stare </b> 
+        </summary>
+    <div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1pk-xhLBCcpdjYXSCqzMgIBpZWKMZegN5" height = "250px" ></img>
+    </div>
+</details>
+
+<details>
+    <summary> <b> Diagrama de interacțiune </b> </summary>
+    <div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1p_VPXSweUi1ebpoQ3iKCBfW0HmXzLOqR" height = "200px" ></img>
+</div>
+</details>
+
+### 💻Interfața Sistemului cu utilizatorul
+- Sistemul de construcție face legătura cu utilizatorul prin intermediul meniului poziționat în stanga jos.
+<div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1rr89IIMKHTO0_wtaqL9gE6s0ihlLiVZs" height = "300px" ></img>
+</div>
+
+- În urma plasării mouse-ului pe o clădire va aparea un pop-up cu detaliile acesteia
+
+<div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1aRL__GzM0RYWd6Y11Rpyki4ZuYp4a5xU" height = "300px" ></img>
+</div>
+
+## Sistemul de realizări
+ - Supranumit "Achievments" are rolul de a ține și evidenția progresul utilizatorul în urma dezvoltării urbane
+ - La anumite realizări acestea se finalizează cu premii pe care utilizatorul poate să le valorifice
+
+### Interfața grafică a sistemului de realizări
+<div align = "center">
+        <img src = "https://drive.google.com/uc?export=view&id=1BJgdsmAZcUAjEXmI75eXcZa0W4_BzMMo" height = "300px" ></img>
+</div>
+
 
 # 🛠️Tehnologii🛠️
 - <b>Unity </b> - motorul de baza in care a avut loc ansamblarea întregului proiect
