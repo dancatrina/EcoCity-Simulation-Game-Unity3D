@@ -175,6 +175,6 @@ Funcționalitățile care stau la baza proiectului sunt:
 
 
 # 🛠️Tehnologii🛠️
-- <b>Unity </b> - motorul de baza in care a avut loc ansamblarea întregului proiect
-- <b>Blender</b> - software folosit pentru modelarea și creearea obiectelor 3D care au urmat a fi puse în proiect
-- <b>Substance Painter</b> - utilizat pentru crearea texturiilor 3D
+- <b><a href = "https://unity.com/">  Unity</a> </b> - motorul de baza in care a avut loc ansamblarea întregului proiect
+- <b><a href = "https://www.blender.org/">Blender </a></b> - software folosit pentru modelarea și creearea obiectelor 3D care au urmat a fi puse în proiect
+- <b><a href= "https://www.substance3d.com/">Substance Painter </a></b> - utilizat pentru crearea texturiilor 3D
