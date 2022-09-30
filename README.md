@@ -128,15 +128,6 @@ Funcționalitățile care stau la baza proiectului sunt:
         <img src = "https://drive.google.com/uc?export=view&id=11NxcdMd3d4RUJNs9LIIAv4RO02y6ouPp" height = "300px" ></img>
 </div>
 
-## 📝Sistemul de obiective📝
-- Oferă obiective utilizatorului pe care este obligat să le îndeplinească
-- Se pot finaliza cu sancțiuni sau premii
-
-### Interfața grafică a sistemului de obiective
-<div align = "center">
-        <img src = "https://drive.google.com/uc?export=view&id=11NxcdMd3d4RUJNs9LIIAv4RO02y6ouPp" height = "300px" ></img>
-</div>
-
 ## ✍️Sistemul de raport statistic✍️
 - Utilizatorul poate să își evalueze deciziile luate cu privire dezvoltarea urbană
 - Alcătuit din 3 categorii : **Sumar** , **Balanță** și **Producție**, fiecare expunând informații referitoare la un anumit sector de dezvoltare
